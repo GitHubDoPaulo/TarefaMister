@@ -18,21 +18,11 @@
         <link rel="stylesheet" href="../css/estilo.css">
        
     </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-custom">
+    <body style="background-color: #e66f00">
+        <nav class="navbar navbar-expand-lg navbar-custom" style="background-color:white">
             <div class="container-fluid">
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav me-auto">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="../view/index.php">Página inicial</a>
                         </li>
@@ -40,6 +30,7 @@
                             <a class="nav-link" href="../view/cadastroLoja.php">Cadastro de lojas</a>
                         </li>
                     </ul>
+                    <img src="../img/Mistercheff.png" style="height: 55px; width: 110px; margin-right: 70x" >
                 </div>
             </div>
         </nav>
@@ -182,7 +173,7 @@
                     </div>
 
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button class="btn btn-primary" type="submit" value="Cadastrar">Cadastrar</button>
+                        <button style="background-color: #399200" class="btn btn-primary" type="submit" value="Cadastrar">Cadastrar</button>
                     </div>
                 </form>
             </div>

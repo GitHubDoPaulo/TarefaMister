@@ -39,7 +39,7 @@ include_once '../view/cadastroLoja.php';
                 echo "Falha no envio do arquivo.";
             }
         } else {
-            echo "Erro no upload da imagem.";
+            echo "Insira uma imagem.";
         }
         $loja->setLogo($caminhoFinal);
         

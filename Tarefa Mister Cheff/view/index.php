@@ -18,21 +18,12 @@
         <link rel="stylesheet" href="../css/estilo.css">
         
     </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-custom">
+    <body style="background-color: #e66f00">
+        <nav class="navbar navbar-expand-lg navbar-custom" style="background-color:white" >
             <div class="container-fluid">
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               
+                <div class="navbar-collapse" >
+                    <ul class="navbar-nav me-auto">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="index.php">Página inicial</a>
                         </li>
@@ -40,6 +31,7 @@
                             <a class="nav-link" href="cadastroLoja.php">Cadastro de lojas</a>
                         </li>
                     </ul>
+                    <img src="../img/Mistercheff.png" style="height: 55px; width: 110px; margin-right: 70x" >
                 </div>
             </div>
         </nav>
@@ -50,7 +42,8 @@
                 <ol class="list-group list-group-numbered">
                     <?php foreach($lojas as $loja) { ?>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-    <div class="ms-2 me-auto">
+                            <div id="box2">
+                                <div class="ms-2 me-auto">
         <div class="fw-bold"><?php echo $loja->getNome(); ?></div>
         <small>CNPJ: <?php echo $loja->getCnpj(); ?></small><br>
         <small>Email: <?php echo $loja->getEmail(); ?></small><br>
@@ -59,7 +52,7 @@
         <small>CEP: <?php echo $loja->getCep(); ?></small><br>
         <small>Complemento: <?php echo $loja->getComplemento(); ?></small><br>
     </div>
-    
+    </div>
     <!-- Flexbox para centralizar a logo -->
     <div class="d-flex justify-content-center align-items-center" style="flex: 1;">
         <img src="../img/<?php echo $loja->getLogo(); ?>" alt="Sem logo" style="max-width: 100px; height: auto;">

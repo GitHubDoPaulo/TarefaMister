@@ -1,7 +1,7 @@
 <?php
 function conexao(){
   try {
-    $pdo = new PDO('mysql:host=localhost;dbname=seu_banco_de_dados;charset=utf8', 'root', '');
+    $pdo = new PDO('mysql:host=localhost ;dbname=;charset=utf8',  );
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
     return $pdo;
